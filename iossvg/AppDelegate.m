@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#include <SVGgh/SVGgh.h>
 
 @interface AppDelegate ()
 
@@ -14,6 +15,13 @@
 
 @implementation AppDelegate
 
+
++(void)initialize{
+    [super initialize];
+    MakeSureSVGghLinks(); // classes only used in Storyboards might not link otherwise
+    [GHControlFactory setDefaultScheme:kColorSchemeClear];
+    [GHControlFactory setDefaultTextColor:[UIColor greenColor]];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

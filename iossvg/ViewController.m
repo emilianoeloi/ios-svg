@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import <SVGImage/SVGImage.h>
+
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
 
 @end
 
@@ -16,7 +21,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    NSString *path = [bundle pathForResource:@"sample" ofType:@"svg"];
+    
+    SIImage *img = [SIImage imageWithContentsOfFile:path];
+    [_imageView setImage:img.UIImage];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
