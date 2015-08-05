@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ACA7895C1B725E23003C949B /* SVGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA7895B1B725E23003C949B /* SVGViewController.m */; };
+		ACA7895E1B725EB3003C949B /* RS.svg in Resources */ = {isa = PBXBuildFile; fileRef = ACA7895D1B725EB3003C949B /* RS.svg */; };
+		ACA789621B726489003C949B /* SVGHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA789611B726489003C949B /* SVGHelper.m */; };
 		ACDFB5061B6FF58700F2323E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDFB5051B6FF58700F2323E /* main.m */; };
 		ACDFB5091B6FF58700F2323E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACDFB5081B6FF58700F2323E /* AppDelegate.m */; };
 		ACDFB50C1B6FF58700F2323E /* iossvg.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACDFB50A1B6FF58700F2323E /* iossvg.xcdatamodeld */; };
@@ -32,6 +35,11 @@
 /* Begin PBXFileReference section */
 		8E1384423CBBF649074D22AD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A8630603BE7AD91772EA67FE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA7895A1B725E23003C949B /* SVGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVGViewController.h; path = VC/SVGViewController.h; sourceTree = "<group>"; };
+		ACA7895B1B725E23003C949B /* SVGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVGViewController.m; path = VC/SVGViewController.m; sourceTree = "<group>"; };
+		ACA7895D1B725EB3003C949B /* RS.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = RS.svg; sourceTree = "<group>"; };
+		ACA789601B726489003C949B /* SVGHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVGHelper.h; path = helper/SVGHelper.h; sourceTree = "<group>"; };
+		ACA789611B726489003C949B /* SVGHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVGHelper.m; path = helper/SVGHelper.m; sourceTree = "<group>"; };
 		ACDFB5001B6FF58700F2323E /* iossvg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iossvg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACDFB5041B6FF58700F2323E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACDFB5051B6FF58700F2323E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -77,6 +85,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		ACA789561B725DE7003C949B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				ACA7895A1B725E23003C949B /* SVGViewController.h */,
+				ACA7895B1B725E23003C949B /* SVGViewController.m */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		ACA7895F1B726471003C949B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				ACA789601B726489003C949B /* SVGHelper.h */,
+				ACA789611B726489003C949B /* SVGHelper.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		ACDFB4F71B6FF58700F2323E = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +126,8 @@
 		ACDFB5021B6FF58700F2323E /* iossvg */ = {
 			isa = PBXGroup;
 			children = (
+				ACA7895F1B726471003C949B /* Helper */,
+				ACA789561B725DE7003C949B /* VC */,
 				ACDFB5071B6FF58700F2323E /* AppDelegate.h */,
 				ACDFB5081B6FF58700F2323E /* AppDelegate.m */,
 				ACDFB50D1B6FF58700F2323E /* ViewController.h */,
@@ -116,6 +144,7 @@
 		ACDFB5031B6FF58700F2323E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ACA7895D1B725EB3003C949B /* RS.svg */,
 				ACDFB52C1B6FFB9D00F2323E /* sample.svg */,
 				ACDFB5041B6FF58700F2323E /* Info.plist */,
 				ACDFB5051B6FF58700F2323E /* main.m */,
@@ -231,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA7895E1B725EB3003C949B /* RS.svg in Resources */,
 				ACDFB5121B6FF58700F2323E /* Main.storyboard in Resources */,
 				ACDFB5171B6FF58700F2323E /* LaunchScreen.xib in Resources */,
 				ACDFB52D1B6FFB9D00F2323E /* sample.svg in Resources */,
@@ -289,6 +319,8 @@
 				ACDFB50C1B6FF58700F2323E /* iossvg.xcdatamodeld in Sources */,
 				ACDFB50F1B6FF58700F2323E /* ViewController.m in Sources */,
 				ACDFB5061B6FF58700F2323E /* main.m in Sources */,
+				ACA789621B726489003C949B /* SVGHelper.m in Sources */,
+				ACA7895C1B725E23003C949B /* SVGViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

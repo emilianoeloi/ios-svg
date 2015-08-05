@@ -22,21 +22,7 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-    NSString *path = [bundle pathForResource:@"sample" ofType:@"svg"];
-    
-    SIImage *img = [SIImage imageWithContentsOfFile:path];
-    [_imageView setImage:img.UIImage];
-    
-    NSError *error;
-    NSString *imageString = [NSString stringWithContentsOfFile:[bundle pathForResource:@"sample" ofType:@"svg"] encoding:NSUTF8StringEncoding error:&error];
-    SIImage *supImg = [SIImage imageWithXMLString:[NSString stringWithFormat:imageString,@"cyan",@"pink",@"5px"]];
-    [_supView setImage:supImg.UIImage];
-    
-    [_infView setImage:img.UIImage];
-    
+    [super viewDidLoad];    
     
 }
 

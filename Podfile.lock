@@ -1,13 +1,10 @@
 PODS:
-  - SVGgh (1.2.2)
   - SVGImage (0.0.4)
 
 DEPENDENCIES:
-  - SVGgh (~> 1.2)
   - SVGImage
 
 SPEC CHECKSUMS:
-  SVGgh: 1d36ebdfc1ef93654be88fe5f1a560149eeb0066
   SVGImage: 669e701cbb6d2fb38aab638b5569e5444cd4a5b5
 
 COCOAPODS: 0.37.2

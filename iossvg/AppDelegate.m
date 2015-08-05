@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#include <SVGgh/SVGgh.h>
+#import "SVGHelper.h"
 
 @interface AppDelegate ()
 
@@ -18,9 +18,7 @@
 
 +(void)initialize{
     [super initialize];
-    MakeSureSVGghLinks(); // classes only used in Storyboards might not link otherwise
-    [GHControlFactory setDefaultScheme:kColorSchemeClear];
-    [GHControlFactory setDefaultTextColor:[UIColor greenColor]];
+    [[SVGHelper sharedSVG] cacheImageWithSVGName:@"RS"];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
